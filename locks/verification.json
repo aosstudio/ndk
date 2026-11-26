@@ -1,0 +1,9 @@
+{
+  "sdk_source": {
+    "url": "https://codeload.github.com/aosstudio/sdk/tar.gz/fb3dde149b8c43eb1a81a1075ad92b5b353a3d4e",
+    "sha256": "d7f25a2f4f894978d10beb2f1065e9595fe718e48157efe4653d3759d9601884"
+  },
+  "sdk": "aosstudio-sdk-37.0-linux-x86_64.tar.gz",
+  "jdk": "aosstudio-jdk-21.0.13.1-2-linux-x86_64.tar.gz",
+  "agp": "aosstudio-agp-9.5.2-maven.tar.gz"
+}

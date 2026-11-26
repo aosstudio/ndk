@@ -1,0 +1,16 @@
+android {
+    ndkVersion '28.2.13676358'
+    defaultConfig {
+        ndk {
+            abiFilters 'x86_64'
+        }
+    }
+    externalNativeBuild {
+        ndkBuild {
+            path 'src/main/jni/Android.mk'
+        }
+    }
+    packaging {
+        jniLibs.useLegacyPackaging = false
+    }
+}
