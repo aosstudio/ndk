@@ -1,0 +1,502 @@
+{
+  "revision": "28.2.13676358",
+  "release_name": "r28c",
+  "host": "linux-x86_64",
+  "abis": [
+    "armeabi-v7a",
+    "arm64-v8a",
+    "x86",
+    "x86_64",
+    "riscv64"
+  ],
+  "release_manifest": "https://android.googlesource.com/platform/manifest/+/12d7cc5b3c9a1b0e66ad7781a7a0898d65e7961a/default.xml",
+  "llvm_android_revision": "r530567e",
+  "archives": {
+    "llvm-project.tar.gz": {
+      "url": "https://codeload.github.com/llvm/llvm-project/tar.gz/3b5e7c83a6e226d5bd7ed2e9b67449b64812074c",
+      "sha256": "7fa7a38aade8b5fa2f7719cd3b6e2f038fed1b00d7369cdb05b490085de79c91",
+      "license": "Apache-2.0 WITH LLVM-exception and upstream notices"
+    },
+    "ndk.tar.gz": {
+      "url": "https://android.googlesource.com/platform/ndk/+archive/805836ef53231ef86dd5fcc5652a1c28d74f4bc4.tar.gz",
+      "license": "Apache-2.0",
+      "tree_sha256": "532a914e839aa71383091112d8321e0d81a6117ba901804b3565cb9caee944b7"
+    },
+    "bionic.tar.gz": {
+      "url": "https://android.googlesource.com/platform/bionic/+archive/94f46d493251dc776d0da6b914824a21aac1bde4.tar.gz",
+      "license": "BSD-3-Clause and file-level notices",
+      "tree_sha256": "3df261d97071d960767dd79cb2b56742f8d1a44edd6867aab76a5c0cfd7418da"
+    },
+    "r28c-headers.tar.gz": {
+      "url": "https://android.googlesource.com/platform/prebuilts/ndk/+archive/35fbbcd449f03cbb515538d0572d564e9984ef13/platform/sysroot/usr/include.tar.gz",
+      "license": "File-level public header licenses and upstream sysroot NOTICE",
+      "tree_sha256": "6abac33a119401b9d24d49adf74ba54992bdb4fda4cdbfea98b957b8321e57a9"
+    }
+  },
+  "patches": {
+    "cherry/0b9f19a9880eb786871194af116f223d2ad30c52.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/0b9f19a9880eb786871194af116f223d2ad30c52.patch?format=TEXT",
+      "sha256": "ff1c554f422f08fc31ceae69db5a8e4b36dfd5700b113eab47743a252a97d9c8",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/6d3cec01a6c29fa4e51ba129fa13dbf55d2b928e.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/6d3cec01a6c29fa4e51ba129fa13dbf55d2b928e.patch?format=TEXT",
+      "sha256": "97e4e2f974134b0ef2f0fbb314183da7f7bd391022fd0d1743dcfbed3ea8df1e",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/0847c903c8a04a2bdf53d5f1b93be5705d998801.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/0847c903c8a04a2bdf53d5f1b93be5705d998801.patch?format=TEXT",
+      "sha256": "c4e38e928ccc056e8cf13b5231e8a49fa58a60b487622cb0ca8838102299dc49",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/ef520ca6b18cf65fc7a13fcad1534f1d70332a88.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/ef520ca6b18cf65fc7a13fcad1534f1d70332a88.patch?format=TEXT",
+      "sha256": "fb9ca0d9d361eac61c567c88438fe4393fcaae0d42ea13a0cf159b12712e6e13",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/a6e231bb2a7924f4269e6735d29a54b2318cd16c.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/a6e231bb2a7924f4269e6735d29a54b2318cd16c.patch?format=TEXT",
+      "sha256": "e7fb2cc1d8aabb2bfc37f44b4e9a28998db02157abfbec875ce5bf2cbd5e86a7",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/6960ace534c4021301dd5a9933ca06ba96edea23.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/6960ace534c4021301dd5a9933ca06ba96edea23.patch?format=TEXT",
+      "sha256": "940c5e7a46635ea0ccb6d23f69007ffd9bd2ca6039d5d533e6ffda0d3155a9f0",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/b20360abeb3a80281dc082f1e093abd13cb1ee4c.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/b20360abeb3a80281dc082f1e093abd13cb1ee4c.patch?format=TEXT",
+      "sha256": "24ac485245fcac93b3ce419ba77829aa91d6958f28229983bb47a8e59fe5ca0b",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/b433076fcbacba8a3b91446390bbea5843322bcd-v2.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/b433076fcbacba8a3b91446390bbea5843322bcd-v2.patch?format=TEXT",
+      "sha256": "2f6b8beec77bfb2bff02b6cf341ff31ec424834aa28c23f30ce18bb12945d8eb",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/dfe4ca9b7f4a422500d78280dc5eefd1979939e6.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/dfe4ca9b7f4a422500d78280dc5eefd1979939e6.patch?format=TEXT",
+      "sha256": "5b4567644c1f852dab459262b0e23aecb20b9d5e6f166d87f21f5d8e1b1291b5",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/f886dfed3ae6cf70827cedc8d8aefde6250a239b.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/f886dfed3ae6cf70827cedc8d8aefde6250a239b.patch?format=TEXT",
+      "sha256": "1e7a30444f33594f27ec14faf8d51b21a702fb1f452f16dc886779ed62e7a7f9",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/0f6ed4c394fd8f843029f6919230bf8df8618529.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/0f6ed4c394fd8f843029f6919230bf8df8618529.patch?format=TEXT",
+      "sha256": "5fd0b11d1d348f55700802f4ec5e83202d3142f51e7179abd9b7b8b689b13257",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/7ad481e76c9bee5b9895ebfa0fdb52f31cb7de77.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/7ad481e76c9bee5b9895ebfa0fdb52f31cb7de77.patch?format=TEXT",
+      "sha256": "75e6a49f719395813ba0ce2ec0faa08fb441301a0c5c6ea50cc81549fb85e221",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/2620ccc3cdebcaa53b96b5f4d79ffe3951534e07.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/2620ccc3cdebcaa53b96b5f4d79ffe3951534e07.patch?format=TEXT",
+      "sha256": "8b653e64f6d9941acd5f0cd9e3bf8930366cee363d1946a9edf511645da004be",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/aa2741449c3609b2ae244d8d3f3e14ad16de72e4.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/aa2741449c3609b2ae244d8d3f3e14ad16de72e4.patch?format=TEXT",
+      "sha256": "d0b232187e7357aed3fcd080260334121b31bbba7298c2f1e1181c5e215cd611",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/73ed2153beb529973741344874c0084d24c2f268.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/73ed2153beb529973741344874c0084d24c2f268.patch?format=TEXT",
+      "sha256": "d79d0ac1bba0f1b5aea0c4500f0e7034f7d78680367cd67b6f0c7f361dd6db34",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/487967af82053cd08022635a2ff768385d936c80.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/487967af82053cd08022635a2ff768385d936c80.patch?format=TEXT",
+      "sha256": "d729ab48703d54ccb4b7fb79ddb0b9c8bb39dda4345714b9f290815a436bde9a",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/236b3e1aad45e2bab8ede0da6397b7b01f9cc9d8.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/236b3e1aad45e2bab8ede0da6397b7b01f9cc9d8.patch?format=TEXT",
+      "sha256": "727835fa72c4e118ab759977797eebd433446302109dc3eb279f7de3446f5f45",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/79a32609759af317a62184c2c7b1300263a336c8.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/79a32609759af317a62184c2c7b1300263a336c8.patch?format=TEXT",
+      "sha256": "b89bfe4221e5bbe7a7e2a960be024ef3463dae5aebf1fee9af51a92768f3ec3c",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/3d361b225fe89ce1d8c93639f27d689082bd8dad.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/3d361b225fe89ce1d8c93639f27d689082bd8dad.patch?format=TEXT",
+      "sha256": "ffbcb7e31869535d13dc21b57a961ff77e6022cd31877de35ade1e73e5c00bfe",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/e9adcc488f96a9f2b8c4344f5e3c7ca6639b9562.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/e9adcc488f96a9f2b8c4344f5e3c7ca6639b9562.patch?format=TEXT",
+      "sha256": "4ff1cd2a122ecafc3d8920386bc3387b22c9b01e541931f9096b0f3d1047849d",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/933d6be8e8c4a81f6409f4daaf704e7f363c6508.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/933d6be8e8c4a81f6409f4daaf704e7f363c6508.patch?format=TEXT",
+      "sha256": "67b6df44c2b7c3d766815c1af4615c1ab03622da850d37cc61440d5195111156",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/12f77e811b49b48df2c37f5036b05b5801a0535f.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/12f77e811b49b48df2c37f5036b05b5801a0535f.patch?format=TEXT",
+      "sha256": "700c2cf3602782248f7dfeb2385afb059634156af0626732c5014d7858c76d70",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/c6049e67efaaca34ca8ad93b007397b118574b81.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/c6049e67efaaca34ca8ad93b007397b118574b81.patch?format=TEXT",
+      "sha256": "c13f926192d00fc0e2721af7e3aeb3c0b8af0a8b074279785b0ca38d5ac86d18",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/89d8df12015ac3440190d372a8d439614027dc2c.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/89d8df12015ac3440190d372a8d439614027dc2c.patch?format=TEXT",
+      "sha256": "44123027151e9fac499a4443d72b6f0d1f86c9b86f427ddeae2a94c9c5f4c71a",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/402eca265f7162e26b8b74d18297fd76c9f100de.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/402eca265f7162e26b8b74d18297fd76c9f100de.patch?format=TEXT",
+      "sha256": "969a0282b3063728849280c7f17510e30c4859016dd7cbbced53660afe30398a",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/cdd29f5bd2f5e55ae116be1a912f0b036d7c98e7.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/cdd29f5bd2f5e55ae116be1a912f0b036d7c98e7.patch?format=TEXT",
+      "sha256": "5f923f37023457c5108ed22571e2c171f3a4d991c96f7c0089712c8046b53c15",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/ee870e593a82a6478ff1d8b3f1bd8a45aa1bf650.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/ee870e593a82a6478ff1d8b3f1bd8a45aa1bf650.patch?format=TEXT",
+      "sha256": "8fc2cbaffc98a81892bb881f4d85b915b7028ecd2e858fb04f7ee72ee167137b",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/e1c36bde0551977d4b2efae032af6dfc4b2b3936.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/e1c36bde0551977d4b2efae032af6dfc4b2b3936.patch?format=TEXT",
+      "sha256": "826583402da8b0b178b4936754d5d248edd196235181ec300b012efe0d00bf23",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/cd634f57c10dedbe4f908889dece2c4460b702c9.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/cd634f57c10dedbe4f908889dece2c4460b702c9.patch?format=TEXT",
+      "sha256": "af780174885b48af78150fe67c0f2c3b1d8f2861b5b21f996de5c9e06cc94bba",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/9a2fd97d391caf1060e303f636d7113501788d2f-r530567.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/9a2fd97d391caf1060e303f636d7113501788d2f-r530567.patch?format=TEXT",
+      "sha256": "9b0a015f44a91d6ed83eb9ba4b0303f0e634daa8874199eb76d74f7d61dba7b3",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/24684bb4a9791145a36a97477eb1fd525a122d8e.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/24684bb4a9791145a36a97477eb1fd525a122d8e.patch?format=TEXT",
+      "sha256": "be5f1bd2613f5e8100a314e84162eec5ddd469445841628f2c6685fdee3ca690",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/3c9022c965b85951f30af140da591f819acef8a0.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/3c9022c965b85951f30af140da591f819acef8a0.patch?format=TEXT",
+      "sha256": "eb5fcd1c8740efc8b4096b8ed41b8b0ce5aa4075d85f14f54f0d8b6323b7c2d7",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "cherry/7d20ea9d32954e8e5becab8495fa509a3f67b710.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/cherry/7d20ea9d32954e8e5becab8495fa509a3f67b710.patch?format=TEXT",
+      "sha256": "06959acf502eaa68656e8c5a858111ef0abf3a3efef086a203cd607a43a297a1",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Add-stubs-and-headers-for-nl_types-APIs.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Add-stubs-and-headers-for-nl_types-APIs.patch?format=TEXT",
+      "sha256": "bba2c01db66c2e29d29b600c342a258b6bb0cb5a0428d22870385bb1065263fe",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Ensure-that-we-use-our-toolchain-s-lipo-and-not-the-.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Ensure-that-we-use-our-toolchain-s-lipo-and-not-the-.patch?format=TEXT",
+      "sha256": "be814908517462677660c8aff7485e5867c1cd1e6e91bc6aeaa57a7c22f7497b",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "BOLT-Increase-max-allocation-size-to-allow-BOLTing-clang-and-rustc.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/BOLT-Increase-max-allocation-size-to-allow-BOLTing-clang-and-rustc.patch?format=TEXT",
+      "sha256": "f296dee815f856aefb4eefb736588cb9441940742c2d03d197a7f5c9e675695f",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Revert-Enable-IAS-In-Backend-v2.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Revert-Enable-IAS-In-Backend-v2.patch?format=TEXT",
+      "sha256": "e8b7656917b56a30244d6e3dc9c5e6eaf64ff3783e215fbb228335ee281a5e80",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Disable-vfork-fork-events.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Disable-vfork-fork-events.patch?format=TEXT",
+      "sha256": "a6e4d97d059894bae82a6af7c26b2af4c97a0a3c3c1255c98e8a1fa475ef65e9",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Revert-Driver-Allow-target-override-containing-.-in-executable-name-v2.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Revert-Driver-Allow-target-override-containing-.-in-executable-name-v2.patch?format=TEXT",
+      "sha256": "0aa4e90dff039eec1c942f8704d63377eb50bb3c70379b25868f95fd5dcfc883",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Support-for-WASM-as-native-IR.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Support-for-WASM-as-native-IR.patch?format=TEXT",
+      "sha256": "2847e80941b8d9533b139d5ba865e0674a0756d87a25fe59b62917ca0934f5da",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "compiler-rt-Allow-finding-LLVMConfig-if-CMAKE_FIND_ROOT_PATH_MODE_PACKAGE-is-set-to-ONLY.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/compiler-rt-Allow-finding-LLVMConfig-if-CMAKE_FIND_ROOT_PATH_MODE_PACKAGE-is-set-to-ONLY.patch?format=TEXT",
+      "sha256": "3e1e2a5cec77206efb39c0c90d5ab692abbfb26d9f169fed8025ae7a76e1491c",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "move-cxa-demangle-into-libcxxdemangle.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/move-cxa-demangle-into-libcxxdemangle.patch?format=TEXT",
+      "sha256": "6a8879953b2133491d4bc6be97332d4d031b837e0175227969f4ef7f7d6ef8b9",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "avoid-triggering-fdsan-in-filebuf-test.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/avoid-triggering-fdsan-in-filebuf-test.patch?format=TEXT",
+      "sha256": "4e1524cacdb74e6998b0ca127cbdd93bad8ef7e10494d78cfe1cba38bf23116a",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "disable-symlink-resolve-test-on-android.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/disable-symlink-resolve-test-on-android.patch?format=TEXT",
+      "sha256": "43da3d11f2b648967ddc12a72a88bee2506be3c81629245faacccbb138b61b53",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "avoid-fifo-socket-hardlink-in-libcxx-tests.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/avoid-fifo-socket-hardlink-in-libcxx-tests.patch?format=TEXT",
+      "sha256": "a2ef134dd468076fe3a18a97ca42dce8a17919e66491182b0f470c1bf5299769",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Add-cmake-c-cxx-asm-linker-flags.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Add-cmake-c-cxx-asm-linker-flags.patch?format=TEXT",
+      "sha256": "82db3a79b15b628560e212a5097183333e2efab41a94a2dae70d7ccd81e8084a",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Remove-inline_asm-tests-for-now.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Remove-inline_asm-tests-for-now.patch?format=TEXT",
+      "sha256": "6351e1e58adf250c1244287cd1378b2b710c19cd3e5754092efd334545159bfb",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "hide-locale-lit-features-for-bionic-v2.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/hide-locale-lit-features-for-bionic-v2.patch?format=TEXT",
+      "sha256": "8a2631e1b4eefd87f5f580f65bb901e509fbafef7f84cd723bfea14ecc0df29e",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Disable-PhaseOrdering-ARM-arm_mult_q15.ll-test.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Disable-PhaseOrdering-ARM-arm_mult_q15.ll-test.patch?format=TEXT",
+      "sha256": "a09f2241e469a1e609b094ffcaeb68f496c82905e1caaa82ce9de9b81e01df82",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Revert-Recommit-DAGCombiner-Transform-icmp-eq-ne-and.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Revert-Recommit-DAGCombiner-Transform-icmp-eq-ne-and.patch?format=TEXT",
+      "sha256": "fef9c036716421b14ea34759659d2d71f5007ea7ebf57848b817320ab28c4e80",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    },
+    "Revert-Fix-diagnostic-for-stdatomic.h-before-C++23.patch": {
+      "url": "https://android.googlesource.com/toolchain/llvm_android/+/e727bfb014bd436f581a66a450c939a6983a1fc3/patches/Revert-Fix-diagnostic-for-stdatomic.h-before-C++23.patch?format=TEXT",
+      "sha256": "66ee94328064e17ed534c1ace72d5a35ae09a4eac3fa514e4b236d6997af4ab9",
+      "license": "Apache-2.0 WITH LLVM-exception",
+      "encoding": "base64"
+    }
+  },
+  "files": {
+    "ndkstubgen.py": {
+      "url": "https://android.googlesource.com/platform/build/soong/+/3fe78dc9b32f1ac3f7eb279ae9376d7037b18452/cc/ndkstubgen/__init__.py?format=TEXT",
+      "sha256": "66889d65ab68833d8c2fca647ac3820a54fe7835a4815294de61fb17beb13a4a",
+      "license": "Apache-2.0",
+      "encoding": "base64"
+    },
+    "symbolfile.py": {
+      "url": "https://android.googlesource.com/platform/build/soong/+/3fe78dc9b32f1ac3f7eb279ae9376d7037b18452/cc/symbolfile/__init__.py?format=TEXT",
+      "sha256": "60ee92223b49a998a45b948f322f16f991276a220114cf10a21360db4f8bb9c4",
+      "license": "Apache-2.0",
+      "encoding": "base64"
+    },
+    "sysroot-NOTICE": {
+      "url": "https://android.googlesource.com/platform/prebuilts/ndk/+/35fbbcd449f03cbb515538d0572d564e9984ef13/platform/sysroot/NOTICE?format=TEXT",
+      "sha256": "2905ac5c59628352af990c748a8f4c3675a04f36eca7914612e3068661d2c6a6",
+      "license": "Upstream license notices",
+      "encoding": "base64"
+    },
+    "nativehelper-NOTICE": {
+      "url": "https://android.googlesource.com/platform/libnativehelper/+/3ca43dfe2bf4613852df0303531fa8ecf4b7063c/NOTICE?format=TEXT",
+      "sha256": "38751245389e1e23f73e6f5384b5cbe7fa972cc4410c5adc9c04b082a0b9561a",
+      "license": "Upstream license notices",
+      "encoding": "base64"
+    },
+    "liblog-NOTICE": {
+      "url": "https://android.googlesource.com/platform/system/logging/+/54d3fa266d2123c0b076c646fae60d049311052a/liblog/NOTICE?format=TEXT",
+      "sha256": "f09747e3bc87e0ec3bdea983b37e18eeda223e01e678f76418a8a731ed8f590f",
+      "license": "Upstream license notices",
+      "encoding": "base64"
+    },
+    "platform/libEGL.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/native/+/f7274fca5e36082674740bc6c976f73c4578d009/opengl/libs/libEGL.map.txt?format=TEXT",
+      "sha256": "80e78f622c06294c952b6abc50cd0a0f03b266412e85071c95ea475930c79f97",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libGLESv1_CM.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/native/+/f7274fca5e36082674740bc6c976f73c4578d009/opengl/libs/libGLESv1_CM.map.txt?format=TEXT",
+      "sha256": "a9d0f30e5883eecd0509198fcf0bc3371f5d9ac06f85b1cf678a2d790abb83f5",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libGLESv2.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/native/+/f7274fca5e36082674740bc6c976f73c4578d009/opengl/libs/libGLESv2.map.txt?format=TEXT",
+      "sha256": "4020e92780ff70f7593f9fe03b1175eba7e1ce749a651aeb8a664e902128d014",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libGLESv3.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/native/+/f7274fca5e36082674740bc6c976f73c4578d009/opengl/libs/libGLESv3.map.txt?format=TEXT",
+      "sha256": "6140b10dc2556aa4bd8af96a64dba8c340ccd5fb57f33ba2ed40ab0472faad14",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libOpenMAXAL.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/wilhelm/+/8d46666feda581e8e2d4917c86929e4c3ecef95e/src/libOpenMAXAL.map.txt?format=TEXT",
+      "sha256": "d65ecb4182ac7f41213da75eb59c99d5c5b36ab1b934c64619c9cff5127f446f",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libOpenSLES.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/wilhelm/+/8d46666feda581e8e2d4917c86929e4c3ecef95e/src/libOpenSLES.map.txt?format=TEXT",
+      "sha256": "cca5f11bb355dacc08e3b2eb99eb37e87d6b7942051e81ef72a756cdf65d9012",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libaaudio.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/av/+/1863cb0ea5a9e1340f11a435618ff863e017da29/media/libaaudio/src/libaaudio.map.txt?format=TEXT",
+      "sha256": "bb4e6a8e65606c75568b62e0b26308218fc97dc7203ed0c975665528edcda4ec",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libamidi.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/media/native/midi/libamidi.map.txt?format=TEXT",
+      "sha256": "e738181a42c465128579181bcac05dd527ed4ef624367933d172028c6ea2e166",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libandroid.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/native/android/libandroid.map.txt?format=TEXT",
+      "sha256": "7ec90af2c112ccb00406afb98704080633ed98d2cec2b47e87b54dd2eaef0cfd",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libbinder_ndk.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/native/+/f7274fca5e36082674740bc6c976f73c4578d009/libs/binder/ndk/libbinder_ndk.map.txt?format=TEXT",
+      "sha256": "ff1b05887e8244457bb662abf8ab7051efcfd6f7fe77ba2ca6118214ee6aa2dd",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libcamera2ndk.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/av/+/1863cb0ea5a9e1340f11a435618ff863e017da29/camera/ndk/libcamera2ndk.map.txt?format=TEXT",
+      "sha256": "9ffa987a6bbbd97f288859cda1ab1bb0daaf55cbe73fe7986e19647f5c89047c",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libicu.map.txt": {
+      "url": "https://android.googlesource.com/platform/external/icu/+/cf305aeb6df416fa81cfc98bd73d913ee781175d/libicu/libicu.map.txt?format=TEXT",
+      "sha256": "b06667b97f0de78daeeccd356d3d87486cb796c8676f0d9f3b67f4145d93c76a",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libjnigraphics.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/base/+/4e43ad12e1b211f15152e9c5b16b0fe88e6b93f3/native/graphics/jni/libjnigraphics.map.txt?format=TEXT",
+      "sha256": "2171bf774acc1149dc1298d5ae030a820d7d1994ebdc04c29806d62e129e7597",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/liblog.map.txt": {
+      "url": "https://android.googlesource.com/platform/system/logging/+/54d3fa266d2123c0b076c646fae60d049311052a/liblog/liblog.map.txt?format=TEXT",
+      "sha256": "7477e071de023751db40660ecfde5ec65ce446fe53f53111eeab418c36550b64",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libmediandk.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/av/+/1863cb0ea5a9e1340f11a435618ff863e017da29/media/ndk/libmediandk.map.txt?format=TEXT",
+      "sha256": "1d63a4a1ad357e947c0f59035ff67a3cf425d3e11c1b6fa1f88945c6d6ece941",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libnativehelper.map.txt": {
+      "url": "https://android.googlesource.com/platform/libnativehelper/+/3ca43dfe2bf4613852df0303531fa8ecf4b7063c/libnativehelper.map.txt?format=TEXT",
+      "sha256": "1d1a688885e018b90b52a76e79730804318dafe84ce2a697bb85e85a171eec02",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libnativewindow.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/native/+/f7274fca5e36082674740bc6c976f73c4578d009/libs/nativewindow/libnativewindow.map.txt?format=TEXT",
+      "sha256": "04bcce6627f5bf5fe21fcf14757c275121bd2caa36f44756eb60a9180c80b8f5",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libneuralnetworks.map.txt": {
+      "url": "https://android.googlesource.com/platform/packages/modules/NeuralNetworks/+/47e1dba8c35c6e49b8a62cc1cc2372b10bf82f77/runtime/libneuralnetworks.map.txt?format=TEXT",
+      "sha256": "1557aad7b045ab2e00ea2d58b320c8f6ac379c0a92e48cb230c8c924e9866b2a",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libsync.map.txt": {
+      "url": "https://android.googlesource.com/platform/system/core/+/fc7bc8c4bfb4c6095e34ea784509dae56f25b486/libsync/libsync.map.txt?format=TEXT",
+      "sha256": "977e84fa5f63dc8038284a99966d77e6934694c17e2a6c87fc225dd36015d6d8",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libvulkan.map.txt": {
+      "url": "https://android.googlesource.com/platform/frameworks/native/+/f7274fca5e36082674740bc6c976f73c4578d009/vulkan/libvulkan/libvulkan.map.txt?format=TEXT",
+      "sha256": "81f7aaedf5f74d14009738380f413c62d423fb35fbb854a898682baa843870e4",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    },
+    "platform/libz.map.txt": {
+      "url": "https://android.googlesource.com/platform/external/zlib/+/86056a43326ceb4d9f5c3ca2410e51dcdcb4517d/libz.map.txt?format=TEXT",
+      "sha256": "31a77086075d0ee58b1d78f7363469dbeae162bd78b42c6e254e5b59f1bab0b0",
+      "license": "AOSP public symbol map with upstream notices",
+      "encoding": "base64"
+    }
+  }
+}
